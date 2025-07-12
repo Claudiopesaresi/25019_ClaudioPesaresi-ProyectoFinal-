@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datalab</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="grid-container">
+
+  <!-- HEADER -->
+  
+  <header class="header">
+
+    <!-- Acá estamos dentro del header-->
+
+    <div class="header-container">
+
+      <div class="header-item">            
+        <img class="logo" src="./media/img/Datalab.png" height="100">
+      </div>
+
+      <div class="header-item">
+        <h2 class="tituloHeader">Laboratorio de datos</h2><br>
+        <h2 class="tituloHeader">Venta de ropa</h2><br>
+        <p class="parrafoHeader">Bienvenido a nuestro laboratorio de datos (ahora devenido en tienda web), donde la ciencia de datos cobra vida y elegimos las mejores prendas para su vida diaria. Explora nuestros servicios, contáctanos y descubre cómo podemos ayudarte a transformar tus datos en conocimiento valioso y agradable experiencia de vida.</p>
+      </div>            
+
+    </div>
+
+  </header>
+
+<!--    BARRA DE NAVEGACION    -->
+
+  <nav class="navbar">
+        <!-- Acá estamos dentro del nav-->
+
+    <div class="nav-container">
+
+
+      <div class="nav-item">            
+
+        <p class="refLogin" >Usuario: mínimo 8 caracteres</p>
+        <p class="refLogin" >Clave: 1 May./ 1 Min./ 1 Nro. </p>
+        <p class="refLogin" > - "Pepe1234" - </p>
+        
+        <form id="myForm" class="my-form" novalidate>
+          <input type="text" name="nombre" id="nombre" placeholder="Usuario" required> <br>
+          <input type="password" name="pwd" id="pwd" placeholder="Clave" required> <br>
+          <button type="button" class="btn-enviar" id="btnEnviar">Enviar</button>
+        </form>
+
+        <div id="empty-name-error" class="error"></div>
+        <div id="min-name-error" class="error"></div>
+        <div id="empty-pwd-error" class="error"></div>
+        <div id="car-pwd-error" class="error"></div>
+        <div id="OK-pwd-error" class="error"></div>
+
+      </div>
+
+      <div class="nav-item">            
+            <h2 class="tituloNavbar">Menu de navegación</h2> 
+            <ul class="flex-links">
+                <li>
+                  <a href="#form-id" >Contacto</a>                    
+                </li>
+                <li >
+                  <a href="#nuestroEquipo" >Nuestro equipo</a>                    
+                </li>
+                <li >
+                  <a href="#ubicacion" >Ubicación</a>                    
+                </li>
+            </ul>
+      </div>
+
+    </div>
+
+
+  </nav>
+
+  <!--    ESPACIO PRINCIPAL    -->
+
+  <main class="main">
+    Pantalla principal
+    <p class="tituloHeader" >
+      <br>
+      Estoy pensando un sistema que muestre una imagen, previo al login, y otra funcionalidad una vez accedido al sistema.
+      <br>
+      <br>
+      De esta forma, lo que vea cualquier persona estara separado de lo que pueda ver quien realmente tiene acceso a las funciones.
+      <br>
+      <br>
+      Voy a hacer un cambio de rubro desde el original de servicios de datos a la venta de ropa, porque voy a utilizar la API de FAKESTORE.
+      <br>
+      <br>
+    </p>
+    <img class="nuestroEquipo" src="./media/img/tienda.avif" width="100%" max-height="200px" max-width="20vw" alt="Nuestro equipo">
+  </main>
+  
+  <!--    BARRA LATERAL    -->
+
+  <aside class="aside">
+    <p class="tituloHeader" id="nuestroEquipo" >Nuestro equipo</p>
+    <img class="nuestroEquipo" src="./media/img/NuestroEquipo.webp" width="100%" max-height="200px" max-width="20vw" alt="Nuestro equipo">
+  </aside>
+
+  <!--    FOOTER    -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-item">            
+
+        <!-- Seccion de mapa -->
+          
+          <h2 class="tituloFondo" id="ubicacion" >Ubicación</h2><br> 
+
+              <iframe class="mapa" title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.7592116899013!2d-58.38153644211292!3d-34.60396023619692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e1!3m2!1ses!2sar!4v1748292603830!5m2!1ses!2sar" style="border:2;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>        
+              <br>
+
+
+      </div>
+    
+      <div class="footer-item" id="form-id">
+          <h2 class="tituloFondo" >Referencias personales</h2><br> 
+          <h2 class="tituloFondo" >claudio.pesaresi@gmail.com</h2>
+          <h2 class="tituloFondo" >54-9-11-3124-4440</h2>
+      </div>
+
+      
+    </div>
+
+  </footer>
+
+  <script src="js/formValidaciones.js"></script>
+
+</body>
+</html>
